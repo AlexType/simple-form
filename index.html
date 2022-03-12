@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form HTML5</title>
+</head>
+
+<body>
+
+  <main>
+    <form class="form" id="form">
+      <div class="form__group">
+        <h6 class="form__title">ФИО</h6>
+        <div class="form__item">
+          <input type="text" name="firstName" placeholder="Фамилия">
+        </div>
+        <div class="form__item">
+          <input type="text" name="middleName" placeholder="Имя">
+        </div>
+        <div class="form__item">
+          <input type="text" name="lastName" placeholder="Отчество">
+        </div>
+      </div>
+      <div class="form__group">
+        <h6 class="form__title">ФИО</h6>
+        <div class="form__item">
+          <input type="email" name="email" placeholder="E-mail">
+        </div>
+        <div class="form__item">
+          <input type="tel" name="tel" placeholder="Номер телефона">
+        </div>
+      </div>
+      <div class="form__group">
+        <h6 class="form__title">ФИО</h6>
+        <div class="form__item">
+          <input type="date" name="date" placeholder="Дата рождения">
+        </div>
+      </div>
+      <hr>
+      <div class="form__group">
+        <button type="button" id="form-reset">Сбросить</button>
+        <button type="submit">Принять</button>
+      </div>
+    </form>
+
+    <script>
+      const form = document.querySelector('#form'),
+        btnReset = document.querySelector('#form-reset');
+
+      btnReset.addEventListener('click', () => {
+        form.reset();
+      })
+    </script>
+  </main>
+
+</body>
+
+</html>
